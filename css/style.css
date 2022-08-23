@@ -64,19 +64,6 @@ body {
 .list-item li {
   color: #ffffff;
 }
-.name {
-  color: #c91b28;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.desc {
-  font-size: 1.1rem;
-  color: #ffffff;
-}
-.hero-content h1 {
-  color: #fff;
-  font-size: 3rem;
-}
 .hero-content h1:hover{
     animation: shake 0.5s;
 }
@@ -91,55 +78,16 @@ body {
   max-width: 150px;
   border: none;
 }
-.hero-sec {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  position: relative;
-}
-.hero-img {
-  margin-top: -60px;
-  margin-left: -150px;
-}
-.hero-img img {
-  width: 600px;
-}
 .hero-img img:hover{
     animation: shake 0.5s;
 }
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  margin-left: -130px;
-}
-.square-bg {
-  position: absolute;
-  background-color: #181818;
-  width: 53rem;
-  height: 900px;
-  left: -200px;
-  top: 550px;
-  z-index: -1;
-}
 .cards {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  
+
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
   color: #ffffff;
   background-color: #1e1e1e;
-  padding: 40px 50px;
-  width: 20%;
-  height: 40vh;
 }
 .cards .card:nth-child(2) {
   background-color: #c91b28;
@@ -152,16 +100,15 @@ body {
   text-decoration: none;
   color: #c91b28;
 }
-.card:hover, .prj-card:hover{
+/* .card:hover, .prj-card:hover{
     animation: pulse;
     animation-duration: 2s;
 }
-
 .card h3{font-size: 1.4rem;}
 .exp-fig h1:hover, .exp-card h1:hover {
   animation: bounce;
   animation-duration: 2s;
-}
+} */
 .card p {
   font-size: 1rem;
   font-weight: 400px;
@@ -171,9 +118,6 @@ body {
   color: #c91b28;
 }
 .service-rows {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 100px;
 }
 .service-rows .exp-fig {
@@ -181,11 +125,7 @@ body {
   text-align: center;
   margin-left: -60px;
 }
-.service-rows .exp-fig h1 {
-  font-size: 7rem;
-  font-weight: 900;
-  color: #ef4040;
-}
+
 .service-rows .exp-fig p {
   font-size: 2rem;
   margin-top: -10px;
@@ -230,10 +170,10 @@ body {
   font-size: 3rem;
 }
 .project-content {
-  display: flex;
+  /* display: flex;
   margin-top: 150px;
   justify-content: center;
-  gap: 440px;
+  gap: 440px; */
 }
 .featured h3 {
   font-size: 2.2rem;
@@ -282,58 +222,16 @@ body {
   justify-content: center;
   align-items: center;
 }
-.prj-card {
-  width: 40%;
-}
 .contact-row {
   background-color: #1e1e1e;
-  margin-top: 120px;
 }
-.contact-content-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 50vh;
-}
-.contact-content h1 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-.contact-content p {
-  color: #cecece;
-}
-.footer-top {
-  margin-top: 120px;
-  height: 24vh;
-}
+
 .footer-list {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
   gap: 50px;
 }
 .footer-list-item {
   color: #ffffff;
 }
 footer {
-  display: flex;
-  justify-content: space-around;
   background-color: #1e1e1e;
-  align-items: center;
-  height: 26vh;
-}
-.footer-icons {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-  gap: 40px;
-}
-.footer-logo {
-  position: relative;
-  left: -100px;
-}
-.footer-icons {
-  position: relative;
-  left: -350px;
 }

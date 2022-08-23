@@ -10,77 +10,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Animate CSS -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- tailwind  -->
+    <link href="./dist/output.css" rel="stylesheet" />
+
     <title>Design | Landing | Page</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="">
         <!-- header -->
-        <header>
-            <nav class="navbar">
+        <header class="mt-12">
+            <nav class="hidden md:flex flex-row justify-around ">
                 <div class="logo">
                     <img src="./assets/Logo.svg" alt="">
                 </div>
-                <div>
-                    <ul class="list-item">
+                    <ul class="text-white flex flex-row gap-8">
                         <li>HOME</li>
                         <li>PROJECT</li>
                         <li>ABOUT</li>
                         <li>CONTACT</li>
                         <li>OTHER PAGE</li>
                     </ul>
-                </div>
             </nav>
         </header>
-        <section class="hero-sec">
-            <div class="hero-img">
-                <img src="./assets/hero-img.png" alt="">
+        <!-- mobile -->
+        <div class="md:hidden ">
+            <div class="bg-[#c91b28] flex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg class="w-6 h-12 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
-            <div class="hero-content">
-                <p class="name">Hello I'm Arthur</p>
-                <h1>Visual Designer</h1>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            <header class="hidden mobile-menu fixed h-auto bg-[#c91b28]">
+                    <nav class="">
+                            <ul class="flex flex-col text-white gap-4">
+                                <li>HOMEs</li>
+                                <li>PROJECT</li>
+                                <li>ABOUT</li>
+                                <li>CONTACT</li>
+                                <li>OTHER PAGE</li>
+                            </ul>
+                    </nav>
+            </header>
+        </div>
+        <section class="flex flex-col md:flex-row justify-around mt-20">
+            <div class="hero-img">
+                <img class=" md:max-w-[600px]" src="./assets/hero-img.png" alt="">
+            </div>
+            <div class="md:mt-32 flex flex-col gap-4 items-center justify-center">
+                <p class="text-[#c91b28] text-2xl font-semibold">Hello I'm Arthur</p>
+                <h1 class="text-white text-4xl font-semibold">Visual Designer</h1>
+                <p class="text-xl text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                     minima voluptatibus, eum explicabo voluptatum <br>
                     quos! Amet maxime, autem et sequi architecto incidunt.</p>
                 <button class="btn-me">About me</button>
             </div>
-            <div class="square-bg"></div>
         </section>
-        <section class="cards">
+        <section class="flex flex-col md:flex-row gap-12 justify-center cards">
             <!-- card-1 -->
-            <div class="card ">
-                <img src="./assets/ui-logo.svg" alt="">
+            <div class="flex flex-col gap-3 items-center card w-[300px]">
+                <img class="w-[100px]" src="./assets/ui-logo.svg" alt="">
                 <h3>UI Design</h3>
                 <p>Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit.</p>
                 <a href="http://">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
 
             </div>
-            <div class="card">
-                <img src="./assets/product-logo.svg" alt="">
+            <div class="flex flex-col gap-3 items-center card w-[300px]">
+                <img class="w-[100px]" src="./assets/product-logo.svg" alt="">
                 <h3>Product Design</h3>
                 <p>Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit.</p>
                 <a href="http://">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
 
             </div>
-            <div class="card">
-                <img src="./assets/brand-logo.svg" alt="">
+            <div class="flex flex-col gap-3 items-center card w-[300px]">
+                <img class="w-[100px]" src="./assets/brand-logo.svg" alt="">
                 <h3>Branding</h3>
                 <p>Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit.</p>
                 <a href="http://">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
 
             </div>
         </section>
-        <section class="service-rows">
+        <section class="flex flex-col md:flex-row service-rows">
             <div class="exp-fig">
-                <h1>12</h1>
+                <h1 class="text-[#c91b28] font-semibold">12</h1>
                 <p>Years Experience</p>
             </div>
-            <div class="right-cards">
+            <div class="items-center justify-center right-cards">
                 <div class="exp-card">
                     <h1>60+</h1>
                     <p>Clients</p>
@@ -100,12 +119,12 @@
             </div>
         </section>
         <section class="project-rows">
-            <div class="project-content">
-                <div class="featured">
+            <div class="flex flex-col gap-4 md:flex-row items-center justify-center sm:mt-12  md:mt-32 md:gap-32 project-content">
+                <div class="text-center featured">
                     <h3>FEATURED PROJECTS</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="view-all">VIEW ALL</button>
+                <button class=" view-all">VIEW ALL</button>
             </div>
             <div class="proj-cards">
                 <div class="prj-card">
@@ -146,13 +165,13 @@
                 </div>
             </div>
         </section>
-        <div class="contact-row">
-            <div class="contact-content-row">
-                <div class="contact-content">
-                    <h1>Let's work together on
+        <div class="mt-20 contact-row ">
+            <div class="flex flex-col md:flex-row justify-around gap-4 items-center">
+                <div class="flex flex-col gap-6 text-white mt-4 mb-6">
+                    <h1 class="ml-3 md:text-5xl">Let's work together on
                         <br> your next project
                     </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="text-md ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         <br> Facere praesentium aliquam amet neque quibusdam t.
                     </p>
                 </div>
@@ -160,7 +179,7 @@
             </div>
         </div>
         <div class="footer-top">
-            <ul class="footer-list">
+            <ul class="footer-list flex flex-col md:flex-row items-center justify-center sm:mt-4 sm:mb-4 md:mt-16 md:mb-16">
                 <li class="footer-list-item">HOME</li>
                 <li class="footer-list-item">ABOUT</li>
                 <li class="footer-list-item">PROJECTS</li>
@@ -168,17 +187,18 @@
             </ul>
         </div>
     </div>
-        <footer>
-            <div class="footer-logo">
-                <img src="./assets/Logo.svg" alt="">
-            </div>
-                <ul class="footer-icons">
-                    <li><img class="pulse-icon" src="./assets/fb.svg" alt=""> </li>
-                    <li><img src="./assets/twitter.svg" alt=""></li>
-                    <li> <img src="./assets/youtube.svg" alt=""></li>
-                </ul>
-        </footer>
-    
+    <footer class="mt-8 mb-8 flex flex-col md:flex-row items-center md:gap-96 sm:gap-6">
+        <div class="md:ml-32 mt-8">
+            <img src="./assets/Logo.svg" alt="">
+        </div>
+        <ul class="mt-8 mb-8 flex flex-col md:flex-row gap-6 items-center">
+            <li><img class="pulse-icon" src="./assets/fb.svg" alt=""> </li>
+            <li><img src="./assets/twitter.svg" alt=""></li>
+            <li> <img src="./assets/youtube.svg" alt=""></li>
+        </ul>
+    </footer>
+
+    <script src="./action.js"></script>
 </body>
 
 </html>
